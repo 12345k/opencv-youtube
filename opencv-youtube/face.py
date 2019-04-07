@@ -1,6 +1,6 @@
 import cv2
 
-face_cascade = cv2.CascadeClassifier("face.xml")
+face_cascade = cv2.CascadeClassifier("face.xml") 
 
 video_capture = cv2.VideoCapture(0)
 
@@ -8,7 +8,6 @@ while True:
     _,frame = video_capture.read()
 
    
-
     face_detect =  face_cascade.detectMultiScale(
         frame,scaleFactor=1.1,minNeighbors=5,flags =cv2.CASCADE_SCALE_IMAGE,
         minSize=(30,30)
