@@ -4,7 +4,6 @@ import argparse
 
 parser = argparse.ArgumentParser(description='This program shows how to use background subtraction methods provided by \
                                               Opencv2. You can process both videos and images.')
-parser.add_argument('--input', type=str, help='Path to a video or a sequence of image.', default='./video/videoplayback.mp4')
 parser.add_argument('--algo', type=str, help='Background subtraction method (KNN, MOG2).', default='MOG2')
 args = parser.parse_args()
 
